@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- 联系人姓名 -->
+
+        <TextView
+            android:id="@+id/bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="张三"
+            android:textColor="@color/lightcoral"
+            android:textSize="19sp" />
+
+        <!-- 联系方式 -->
+
+        <TextView
+            android:id="@+id/booknum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:text="13349885678"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <!-- 操作按钮 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/action_bt"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/action_bt_layout"
+            android:text="邀请"
+            android:textColor="@color/sandybrown"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

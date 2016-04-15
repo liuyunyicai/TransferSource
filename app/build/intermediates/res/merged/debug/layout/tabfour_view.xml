@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <!-- 个人信息设置功能 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!-- 个人信息显示 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <!-- 个人图片 -->
+
+                    <downloadimage.RoundImageView
+                        android:id="@+id/selfphoto"
+                        android:layout_width="68dp"
+                        android:layout_height="68dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/male_icon"
+                        imagecontrol:border_inside_color="#fff7f2e9"
+            			imagecontrol:border_thickness="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <!-- 用户名 -->
+
+                        <TextView
+                            android:id="@+id/selinfo_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="xiaoaojianghu"
+                            android:textColor="@color/orange"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical" >
+
+                            <!-- 等级控件 -->
+
+                            <ImageView
+                                android:id="@+id/selfinfo_vipicon"
+                                android:layout_width="19dp"
+                                android:layout_height="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/vip_icon" />
+
+                            <ImageView
+                                android:id="@+id/selfinfo_level1icon"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/level_icon" />
+
+                            <ImageView
+                                android:id="@+id/selfinfo_level2icon"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/level_icon" />
+
+                            <ImageView
+                                android:id="@+id/selfinfo_level3icon"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/level_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/myinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/white"
+                        android:drawableRight="@drawable/selfinfo_tapin_layout"
+                        android:gravity="left|center_vertical" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 完善资料 -->
+
+                <Button
+                    android:id="@+id/correctinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="完善资料"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 修改密码 -->
+
+                <Button
+                    android:id="@+id/changepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="修改密码"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 绑定手机 -->
+
+                <Button
+                    android:id="@+id/changebind"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="绑定手机"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray" />
+                <!-- 消息管理 -->
+
+                <Button
+                    android:id="@+id/mangage_infor"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="消息管理"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 隐私设置 -->
+
+                <Button
+                    android:id="@+id/set_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="隐私设置"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 通讯录管理 -->
+
+                <Button
+                    android:id="@+id/manage_phonebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="通讯录管理"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray" />
+                <!-- 我的产品收藏 -->
+
+                <Button
+                    android:id="@+id/myproduct_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="产品收藏"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 我的商店收藏 -->
+
+                <Button
+                    android:id="@+id/mystore_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="商店收藏"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <!-- 我的消费记录 -->
+
+                <Button
+                    android:id="@+id/myhistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/selfinfo_tapin_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="消费记录"
+                    android:textColor="@color/grey21"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/tabfour_view.xml -->

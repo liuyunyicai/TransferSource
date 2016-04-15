@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 修改完善信息界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 背景显示设置 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <!-- 修改空间背景 -->
+
+        <ImageButton
+            android:id="@+id/setzonebg_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/zone_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:gravity="bottom|right" >
+
+            <LinearLayout
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <!-- 修改个人头像 -->
+
+                <ImageButton
+                    android:id="@+id/setselfphoto_bt"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/male_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- 完善资料界面 -->
+
+            <Button
+                android:id="@+id/btone"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btone_layout"
+                android:drawableLeft="@drawable/btone_icon"
+                android:drawableRight="@drawable/changebt"
+                android:gravity="left|center_vertical"
+                android:text="   个人信息"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <include
+                android:id="@+id/btone_view"
+                layout="@layout/selfinfo_layout" />
+
+            <!-- 修改密码界面 -->
+
+            <Button
+                android:id="@+id/bttwo"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bttwo_layout"
+                android:drawableLeft="@drawable/bttwo_icon"
+                android:drawableRight="@drawable/changebt"
+                android:gravity="left|center_vertical"
+                android:text="   修改密码"
+                android:textColor="@color/wheat"
+                android:textSize="23sp" />
+
+            <include
+                android:id="@+id/bttwo_view"
+                layout="@layout/password_layout" />
+
+            <!-- 绑定手机界面 -->
+
+            <Button
+                android:id="@+id/btthree"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btthree_layout"
+                android:drawableLeft="@drawable/btthree_icon"
+                android:drawableRight="@drawable/changebt"
+                android:gravity="left|center_vertical"
+                android:text="   绑定手机"
+                android:textColor="@color/gold"
+                android:textSize="23sp" />
+
+            <include
+                android:id="@+id/btthree_view"
+                layout="@layout/bind_layout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/changeinfo_layout.xml -->

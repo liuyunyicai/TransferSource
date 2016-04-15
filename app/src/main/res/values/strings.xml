@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">溯源助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="first">导航界面</string>
+    <string name="main_view">主界面</string>
+    <string name="net_view">网络设置</string>
+    <string name="regload">登录界面</string>
+    
+    <string name="main1">tab界面1</string>
+    <string name="main2">tab界面2</string>
+    <string name="main3">tab界面3</string>
+    <string name="main4">tab界面4</string>
+    
+    <string name="nfcview">读NFC</string>
+     <string name="storeview">厂家位置</string>
+     <string name="phonebook">通讯录管理</string>
+     <string name="change_password">修改密码</string>
+     
+    <string name="radio1">商场</string>
+    <string name="radio2">导航</string>
+    <string name="radio3">服务</string>
+    <string name="radio4">个人</string>
+
+    <string name="tab_title_txt1">随便逛逛</string>
+    <string name="tab_title_txt2">溯源防伪</string>
+    <string name="tab_title_txt3">精品商城</string>
+    <string name="tab_title_txt4">个人信息</string>
+
+    <string name="toast_internet_failed">连接服务器失败,请重新连接</string>
+    <string name="toast_no_empty_ip">IP不要为空</string>
+    <string name="toast_no_empty_domain">域名不要为空</string>
+    <string name="toast_gps_opened">GPS打开成功</string>
+    <string name="toast_gps_closed">GPS关闭成功</string>
+
+    <string name="toast_exit_failed">退出失败</string>
+    <string name="toast_exit_success">账号退出成功</string>
+
+    <string name="toast_has_no_nfc">没有NFC设备</string>
+    <string name="toast_info_open_nfc">请打开NFC开关</string>
+    <string name="toast_get_nfc_msg_success">获取标签信息成功</string>
+
+    <string name="toast_bpmanager_init_failure">BMapManager  初始化错误?</string>
+    <string name="toast_network_failure">您的网络出错啦！</string>
+    <string name="toast_network_wrong_input">输入正确的检索条件！</string>
+    <string name="toast_network_wrong_key"></string>
+
+    <string name="toast_send_invite_msg">邀请信息发送中</string>
+
+    <string name="warning">警告！</string>
+    <string name="ensure_to_exit">确定退出？</string>
+    <string name="exit">退出</string>
+    <string name="cancel">取消</string>
+    <string name="exit_anyway">强制退出</string>
+
+    <string name="sell_txt">智能导航，让您轻松购物</string>
+    <string name="changelogin_txt"><u>退出账号</u></string>
+    <string name="visitorlogin_txt"><u>游客访问</u></string>
+
+    <string name="setting_txt">设置</string>
+    <string name="manage_txt">设备管理</string>
+
+    <string name="opennfc_txt">打开NFC</string>
+    <string name="opengps_txt">打开GPS</string>
+    <string name="open_txt">关闭</string>
+    <string name="close_txt">打开</string>
+    <string name="default_txt">默认</string>
+    <string name="change_txt">修改</string>
+
+    <string name="reg_txt"><u>快捷注册>></u></string>
+    <string name="load_txt">开启购物之旅</string>
+
+    <string name="changenet_txt">修改网络地址</string>
+
+
+
+
+
+</resources>

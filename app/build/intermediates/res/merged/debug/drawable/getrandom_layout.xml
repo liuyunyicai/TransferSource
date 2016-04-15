@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true"
+          android:drawable="@drawable/getrandom_bt_pressed" /> <!-- pressed -->
+    <item android:state_focused="true"
+          android:drawable="@drawable/getrandom_bt_pressed" /> <!-- focused -->
+    <item android:drawable="@drawable/getrandom_bt" /> <!-- default -->
+
+</selector>
+<!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/drawable/getrandom_layout.xml -->

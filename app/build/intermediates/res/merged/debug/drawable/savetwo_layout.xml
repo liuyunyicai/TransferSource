@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:state_pressed="true"
+          android:drawable="@color/cornflowerblue" /> <!-- pressed -->
+     <item android:state_focused="true"
+          android:drawable="@color/cornflowerblue" /> <!-- focused -->
+     <item android:drawable="@color/white" /> <!-- default -->
+
+</selector><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/drawable/savetwo_layout.xml -->

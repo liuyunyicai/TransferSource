@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="482dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 距离最近，价钱最低，评分最高，信用最好，相似度 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 筛选标签界面 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- item1 -->
+
+                <LinearLayout
+                    android:id="@+id/itemlayout1"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/range_icon1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp" />
+
+                        <Button
+                            android:id="@+id/range_text1"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="相似度"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/range_select1"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/cancel_range" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- item2 -->
+
+                <LinearLayout
+                    android:id="@+id/itemlayout2"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/range_icon2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp" />
+
+                        <Button
+                            android:id="@+id/range_text2"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="相似度"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/range_select2"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/cancel_range" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- item3 -->
+
+                <LinearLayout
+                    android:id="@+id/itemlayout3"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/range_icon3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp" />
+
+                        <Button
+                            android:id="@+id/range_text3"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="相似度"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/range_select3"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/cancel_range" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 第二行 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <!-- item4 -->
+
+                <LinearLayout
+                    android:id="@+id/itemlayout4"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/range_icon4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp" />
+
+                        <Button
+                            android:id="@+id/range_text4"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="相似度"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/range_select4"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/cancel_range" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- item5 -->
+
+                <LinearLayout
+                    android:id="@+id/itemlayout5"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/range_icon5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp" />
+
+                        <Button
+                            android:id="@+id/range_text5"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="相似度"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp" />
+
+                        <ImageButton
+                            android:id="@+id/range_select5"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/cancel_range" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <!-- 按钮界面 -->
+
+        <Button
+            android:id="@+id/range_style"
+            android:layout_width="40dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/rangebt_layout" />
+
+        <Button
+            android:id="@+id/range_search"
+            android:layout_width="40dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/searchbt_layout" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/similar_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

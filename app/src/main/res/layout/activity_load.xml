@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:id="@+id/barTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_title_txt1"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <!--显示界面-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/bottomRg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                style="@style/TabStyle"
+                android:drawableTop="@drawable/tab1_bt"
+                android:checked="true"
+                android:text="@string/radio1"
+                />
+            <RadioButton
+                android:id="@+id/radio2"
+                style="@style/TabStyle"
+                android:drawableTop="@drawable/tab2_bt"
+                android:text="@string/radio2"
+                />
+            <RadioButton
+                android:id="@+id/radio3"
+                style="@style/TabStyle"
+                android:drawableTop="@drawable/tab3_bt"
+                android:text="@string/radio3"
+                />
+            <RadioButton
+                android:id="@+id/radio4"
+                style="@style/TabStyle"
+                android:drawableTop="@drawable/tab4_bt"
+                android:text="@string/radio4"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+    
+</RelativeLayout>

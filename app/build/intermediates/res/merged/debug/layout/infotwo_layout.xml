@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infolayout_2"
+    android:layout_width="match_parent"
+    android:layout_height="482dp"
+    android:orientation="vertical" >
+
+    <!-- 总评价个数 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/allcommandnumbg"
+        android:gravity="center" >
+
+        <!-- 添加评论BUtton -->
+
+        <ImageButton
+            android:id="@+id/addcomment_bt"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/addcomment_layout" />
+
+        <TextView
+            android:id="@+id/commandall_num"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="评价加载中..."
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <!-- 添加评论BUtton -->
+
+        <ImageButton
+            android:id="@+id/newcomment_bt"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/nextcomment_layout" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <!-- 评论详情 -->
+
+    <LinearLayout
+        android:id="@+id/sendcomment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:background="@color/white"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/sendcomment_bt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/sendmark_layout" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/commandListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/infotwo_layout.xml -->

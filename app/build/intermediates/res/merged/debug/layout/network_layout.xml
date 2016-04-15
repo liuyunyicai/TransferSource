@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/setting_txt"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- 总标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_txt"
+        android:padding="5dp"
+        android:background="@color/little_orange"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" 
+        android:textStyle="bold"
+        />
+
+    <!-- NFC控制模块 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/nfc_icon"
+            android:text="@string/opennfc_txt"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+        <Switch
+            android:id="@+id/switch_nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textOff="@string/close_txt"
+            android:textOn="@string/open_txt" 
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+    <!-- 分割线 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <!-- GPS控制模块 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/gps_icon"
+            android:gravity="center"
+            android:text="@string/opengps_txt"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textOff="@string/close_txt"
+            android:textOn="@string/open_txt"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+    <!-- 空格 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <!-- 网络控制模块 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/net_icon"
+            android:text="@string/changenet_txt"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textOff="@string/change_txt"
+            android:textOn="@string/default_txt"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/netdefault_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <!-- 修改网络地址 -->
+
+    <RelativeLayout
+        android:id="@+id/changenet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 四个编辑框组成的网址 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/netchange_text"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:maxLength="3"
+                    android:numeric="integer"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/netchange_text_1"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:maxLength="3"
+                    android:numeric="integer"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/netchange_text_2"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:maxLength="3"
+                    android:numeric="integer"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/netchange_text_3"
+                    android:layout_width="50dp"
+                    android:layout_height="32dp"
+                    android:maxLength="3"
+                    android:numeric="integer"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/changebet_bt"
+                    android:layout_width="90dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="修改并连接"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <!-- 设置按钮透明 -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- DNS 域名 -->
+
+                <EditText
+                    android:id="@+id/dns_text"
+                    android:layout_width="210dp"
+                    android:layout_height="32dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/changedns_bt"
+                    android:layout_width="90dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="域名连接"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <!-- 设置按钮透明 -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 空格 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <!-- 分割线 -->
+
+    <TextView
+        android:id="@+id/netchange_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/network_layout.xml -->

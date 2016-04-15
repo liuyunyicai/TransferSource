@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/little_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 设置网络按钮 -->
+    <ImageButton
+        android:id="@+id/setnet_bt"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fangwei_symbol"
+        android:scaleType="centerInside"
+        />
+    <!-- 加载图片 -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/laoding_logo" >
+    </ImageView>
+
+    <loading_view.LoadingProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:bar_angle="15"
+        app:bar_height="2dp"
+        app:bar_color="@color/colorPrimary"
+        app:bar_during="3000"
+        app:circle_radius="5dp"
+        app:circle_color="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/hostview_layout.xml -->

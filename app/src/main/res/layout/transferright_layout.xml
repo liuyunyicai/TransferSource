@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/regbg" />
+
+    <!-- 主体界面 -->
+
+    <include
+        android:id="@+id/bindview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        layout="@layout/phonebind_layout"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/protocol_scoll"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/protocobg1" >
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dodgerblue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aliceblue"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/disagree_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/regsaveinfo_bt_layout"
+            android:drawableLeft="@drawable/disagree_layout"
+            android:gravity="left"
+            android:text="  不同意并退出"
+            android:textColor="@color/gray"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/agree_bt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/regnext_layout"
+            android:gravity="center"
+            android:text="阅读并同意产品协议"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|bottom"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/return_bt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/regsaveinfo_bt_layout"
+                android:text="返回上一步"
+                android:textColor="@color/dodgerblue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/dodgerblue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

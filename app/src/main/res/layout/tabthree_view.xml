@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 商店基本信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical" >
+
+        <!-- 商店名称 -->
+
+        <TextView
+            android:id="@+id/storename_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:text="茅台酒光谷店"
+            android:textColor="@color/grey21"
+            android:textSize="19sp" />
+
+        <!-- 分享图标 -->
+
+        <ImageButton
+            android:id="@+id/sharestore_bt"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/sharebt_layout" />
+
+        <!-- 收藏图标 -->
+
+        <ImageButton
+            android:id="@+id/savestore_bt"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/savestore_layout" />
+    </LinearLayout>
+
+    <!-- 商店其他信息界面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white" >
+
+            <!-- 商店图片 -->
+
+            <ImageButton
+                android:id="@+id/storepicture"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/default_storepicture" />
+
+            <!-- 其他信息界面 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <!-- 商店简介 -->
+
+                <TextView
+                    android:id="@+id/storedetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="百年老字号，传统正品"
+                    android:textColor="@color/gold"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <!-- 评分 -->
+
+                    <RatingBar
+                        android:id="@+id/scorestore_bar"
+                        style="@style/foodRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="4.6"
+                        android:stepSize="0.1" />
+
+                    <TextView
+                        android:id="@+id/storescore"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="right"
+                        android:text="4.6"
+                        android:textColor="@color/green"
+                        android:textSize="24sp" />
+                    <!-- 评分人数 -->
+
+                    <TextView
+                        android:id="@+id/storepeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/57人"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 地址与电话信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 电话信息 -->
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!--  -->
+
+                <Button
+                    android:id="@+id/storephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rangeselect_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="13349888348"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/gray" />
+
+                <Button
+                    android:id="@+id/callstore"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/rangeselect_layout"
+                    android:drawableRight="@drawable/phoneicon"
+                    android:gravity="left|center_vertical"
+                    android:text="联系商家"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/gray" />
+
+            <!-- 地址信息 -->
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!--  -->
+
+                <Button
+                    android:id="@+id/storeplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rangeselect_layout"
+                    android:gravity="left|center_vertical"
+                    android:text="珞瑜路光谷大道11号"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/gray" />
+
+                <Button
+                    android:id="@+id/findstore"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/rangeselect_layout"
+                    android:drawableRight="@drawable/taxiicon"
+                    android:gravity="left|center_vertical"
+                    android:text="如何到达"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 分界线，下面是产品列表 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/orange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/fireicon"
+            android:gravity="center"
+            android:text="热销商品"
+            android:textColor="@color/gold"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/commandListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

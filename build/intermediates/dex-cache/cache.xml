@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\AS_data\TransferSource\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\classes-dbf2cd2d481bc22c9abb8d05383931bb5a64aa9b.jar" />
+    </item>
+    <item
+        jar="F:\AS_data\TransferSource\app\libs\baidumapapi_v2_3_5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d6429ce78a21922061e3f89d2a707fe3c9f5de7d">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\baidumapapi_v2_3_5-037f5b15e9d2860185a9c0829a96ed7e1d6f8d4a.jar" />
+    </item>
+    <item
+        jar="F:\AS_data\TransferSource\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\classes-1036659cc65a526adfcbd26b2e1333c6ac52357b.jar" />
+    </item>
+    <item
+        jar="F:\AS_data\TransferSource\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-1f41ada163d40aeabd5324fcd0778994d05eaf71.jar" />
+    </item>
+    <item
+        jar="F:\AS_data\TransferSource\app\libs\locSDK_3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09224a1883da8b5bd37e766f4fab80570d879898">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\locSDK_3.1-6b41c6ba42d71e5b96b039b990b68df01f882fc2.jar" />
+    </item>
+    <item
+        jar="F:\AS_data\TransferSource\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\classes-c41c3e74251cee4e5f96e1e90170b5f2457c7769.jar" />
+    </item>
+    <item
+        jar="G:\Android_SDK\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-4eea1bd1d9b5b4bc722dcbc9568e396b67374972.jar" />
+    </item>
+    <item
+        jar="F:\AS_data\TransferSource\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="F:\AS_data\TransferSource\app\build\intermediates\pre-dexed\debug\classes-c4e533d6f2fc29e5002a8860a41b42a3b33af840.jar" />
+    </item>
+
+</items>

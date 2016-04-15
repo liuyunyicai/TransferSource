@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/load_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="用户名"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <!-- 用户名 -->
+
+        <EditText
+            android:id="@+id/laodname_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#90000000"
+            android:gravity="center"
+            android:hint="输入用户名"
+            android:text="xiaoaojianghu"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:text="密  码"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <!-- 用户名 -->
+
+        <EditText
+            android:id="@+id/laodpassword_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#90000000"
+            android:gravity="center"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:text="12345678"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:background="@color/gray"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/login_bt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/loginbttwo"
+                android:gravity="center"
+                android:text="登     录"
+                android:textColor="@color/gold"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 忘记密码 -->
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/infoone_buttonbg"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="1.5dp"
+            android:background="@color/gold" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/login_layout_two.xml -->

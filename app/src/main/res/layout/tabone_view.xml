@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/ghostwhite"
+        android:orientation="horizontal" >
+
+        <!-- 电子产品 -->
+
+        <Button
+            android:id="@+id/telephone_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/telephoneicon"
+            android:gravity="center"
+            android:text="电子产品"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <!-- 家用电器 -->
+
+        <Button
+            android:id="@+id/electrict_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/electricticon"
+            android:gravity="center"
+            android:text="家用电器"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <!-- 烟酒百货 -->
+
+        <Button
+            android:id="@+id/wine_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/wineicon"
+            android:gravity="center"
+            android:text="烟酒百货"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <!-- 美食餐饮 -->
+
+        <Button
+            android:id="@+id/food_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/foodicon"
+            android:gravity="center"
+            android:text="美食餐饮"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/ghostwhite"
+        android:orientation="horizontal" >
+
+        <!-- 品牌服装 -->
+
+        <Button
+            android:id="@+id/cloth_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/clothicon"
+            android:gravity="center"
+            android:text="品牌服装"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <!-- 男鞋女鞋 -->
+
+        <Button
+            android:id="@+id/shoes_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/shoesicon"
+            android:gravity="center"
+            android:text="男鞋女鞋"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <!-- 珠宝首饰 -->
+
+        <Button
+            android:id="@+id/goldbt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/goldicon"
+            android:gravity="center"
+            android:text="珠宝首饰"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <!-- 其他分类 -->
+
+        <Button
+            android:id="@+id/extra_bt"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:background="@drawable/sortbt"
+            android:drawableTop="@drawable/extraicon"
+            android:gravity="center"
+            android:text="其他分类"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="left|center_vertical"
+        android:text="随便看看"
+        android:textColor="@color/khaki"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/orange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ghostwhite"
+        android:gravity="center" >
+
+        <ListView
+            android:id="@+id/commandListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

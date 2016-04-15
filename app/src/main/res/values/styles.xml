@@ -1,0 +1,92 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!-- 评分软件模型 -->
+	<style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/newrating_bar</item>
+		<item name="android:minHeight">16dip</item>
+  		<item name="android:maxHeight">16dip</item>
+  		<item name="android:minWidth">16dip</item>
+  		<item name="android:maxWidth">16dip</item>
+	</style>
+	
+	<style name="interestRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/interest_layout</item>
+		<item name="android:minHeight">16dip</item>
+  		<item name="android:maxHeight">16dip</item>
+  		<item name="android:minWidth">16dip</item>
+  		<item name="android:maxWidth">16dip</item>
+	</style>
+	
+	<style name="peopleRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/people_layout</item>
+		<item name="android:minHeight">16dip</item>
+  		<item name="android:maxHeight">16dip</item>
+  		<item name="android:minWidth">16dip</item>
+  		<item name="android:maxWidth">16dip</item>
+	</style>
+	
+	<style name="realRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/realindex_layout</item>
+		<item name="android:minHeight">16dip</item>
+  		<item name="android:maxHeight">16dip</item>
+  		<item name="android:minWidth">16dip</item>
+  		<item name="android:maxWidth">16dip</item>
+	</style>
+	
+	<style name="precentRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/precent_layout</item>
+		<item name="android:minHeight">16dip</item>
+  		<item name="android:maxHeight">16dip</item>
+  		<item name="android:minWidth">16dip</item>
+  		<item name="android:maxWidth">16dip</item>
+	</style>
+	
+	
+	<!-- 自定义Tab键 -->
+	<style name="InteractiveRadioButton">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+    </style>
+
+	<!--自定义底部Tab的style-->
+	<style name="TabStyle">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:drawableTop">@mipmap/tab_icon1</item>
+		<item name="android:textColor">@drawable/tab_text_color</item>
+		<item name="android:paddingBottom">5dp</item>
+		<item name="android:paddingTop">5dp</item>
+	</style>
+   
+
+</resources>

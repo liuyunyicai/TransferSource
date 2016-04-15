@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:state_pressed="true"
+          android:drawable="@drawable/setok" /> <!-- pressed -->
+     <item android:state_focused="true"
+          android:drawable="@drawable/setok" /> <!-- focused -->
+     <item android:drawable="@drawable/setok_pressed" /> <!-- default -->
+
+</selector><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/drawable/seton_bt.xml -->

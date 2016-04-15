@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 图片切换 -->
+
+    <FrameLayout
+        android:id="@+id/imagechange_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ViewFlipper>
+        <!-- 提示图标 -->
+
+        <LinearLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/photowarn_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+    <!-- 商品基本信息 -->
+
+    <LinearLayout
+        android:id="@+id/popmain"
+        android:layout_width="fill_parent"
+        android:layout_height="340dp"
+        android:background="@drawable/infoone_infobg" >
+
+        <!-- 物流信息 -->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp" />
+            <!-- 信息 -->
+
+            <Button
+                android:id="@+id/basicinfo_bt"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/infoone_signview_layout"
+                android:gravity="left"
+                android:text="商品信息"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/factoryname_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="生产厂家"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/outputdate_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="出厂日期"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/enddate_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="有效日期"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <!-- 信息 -->
+
+            <Button
+                android:id="@+id/currentstate_bt"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/infoone_signview_layout"
+                android:gravity="left"
+                android:text="当前状态"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/storename_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="销售商家"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/storelevel_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="商家级别"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/current_place_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="当前所在地"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <!-- 信息 -->
+
+            <Button
+                android:id="@+id/detailinfo_bt"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/infoone_signview_layout"
+                android:gravity="left"
+                android:text="详细信息"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/productcomponent_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="商品规格"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/productinstrustions_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="使用说明"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/productnotice_bt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/infoone_button_layout"
+                android:gravity="left"
+                android:text="注意事项"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- 商品图片信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="3dp" />
+
+            <!-- 分类提示 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/infoone_nexticon" />
+                <!-- 一级分类 -->
+
+                <Button
+                    android:id="@+id/sortonename_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_button_layout"
+                    android:gravity="left"
+                    android:text="一级分类"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_nexticon" />
+                <!-- 二级分类 -->
+
+                <Button
+                    android:id="@+id/sorttwoname_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_button_layout"
+                    android:gravity="left"
+                    android:text="二级分类"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_nexticon" />
+                <!-- 商品分类 -->
+
+                <Button
+                    android:id="@+id/definitionname_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_button_layout"
+                    android:gravity="left"
+                    android:text="商品分类"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_nexticon" />
+                <!-- 商品号 -->
+
+                <Button
+                    android:id="@+id/productid_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infoone_button_layout"
+                    android:gravity="left"
+                    android:text="商品号码"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- 商品名称 -->
+
+            <TextView
+                android:id="@+id/productname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="4dp"
+                android:clickable="false"
+                android:gravity="left"
+                android:text="商品名称"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/infoone_photoview" >
+
+                <!-- 商品图片 -->
+
+                <LinearLayout
+                    android:id="@+id/photoimage_layout"
+                    android:layout_width="160dp"
+                    android:layout_height="285dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <!-- 图片按钮 -->
+
+                    <ImageButton
+                        android:id="@+id/photoimage_bt"
+                        android:layout_width="154dp"
+                        android:layout_height="244dp"
+                        android:background="@drawable/photo_image" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/infoone_photoview" >
+
+                        <TextView
+                            android:id="@+id/detailinfo_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:ems="20"
+                            android:text="商品简介：韩国客户改价格和空间的规划快递件法规和健康的法规和肯德基"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </ScrollView>
+                </LinearLayout>
+
+                <!-- 评价信息 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:background="@color/tran"
+                        android:gravity="left"
+                        android:text="参考价格:"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+                    <!-- 价格大小 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:gravity="left" >
+
+                        <Button
+                            android:layout_width="20dp"
+                            android:layout_height="26dp"
+                            android:background="@drawable/yuan_view" />
+
+                        <Button
+                            android:id="@+id/price_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:background="@drawable/infoone_button_layout"
+                            android:gravity="left"
+                            android:text="1333.25"
+                            android:textColor="@color/red"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- 评分大小 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/tran"
+                            android:text="用户评分:"
+                            android:textColor="@color/text_gray"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/scorenum_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_button_layout"
+                            android:text="4.8"
+                            android:textColor="@color/green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" >
+
+                        <!-- 评分显示图标 -->
+
+                        <RatingBar
+                            android:id="@+id/score_bar"
+                            style="@style/foodRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="4.6"
+                            android:stepSize="0.1" />
+                    </LinearLayout>
+
+                    <!-- 兴趣指数大小 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_buttonbg"
+                            android:text="兴趣指数:"
+                            android:textColor="@color/text_gray"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/interestindex_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_button_layout"
+                            android:text="58"
+                            android:textColor="@color/green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" >
+
+                        <!-- 评分显示图标 -->
+
+                        <RatingBar
+                            android:id="@+id/interest_bar"
+                            style="@style/interestRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="2.9"
+                            android:stepSize="0.1" />
+                    </LinearLayout>
+
+                    <!-- 人群指数大小 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_buttonbg"
+                            android:text="兴趣人群:"
+                            android:textColor="@color/text_gray"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/peopleindex_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_button_layout"
+                            android:text="158"
+                            android:textColor="@color/green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" >
+
+                        <!-- 评分显示图标 -->
+
+                        <RatingBar
+                            android:id="@+id/people_bar"
+                            style="@style/peopleRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="1.6"
+                            android:stepSize="0.1" />
+                    </LinearLayout>
+
+                    <!-- 正品系数 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_buttonbg"
+                            android:text="正品指数:"
+                            android:textColor="@color/text_gray"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/realindex_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/infoone_button_layout"
+                            android:text="4.5"
+                            android:textColor="@color/green"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left" >
+
+                        <!-- 评分显示图标 -->
+
+                        <RatingBar
+                            android:id="@+id/real_bar"
+                            style="@style/realRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="4.5"
+                            android:stepSize="0.1" />
+                    </LinearLayout>
+
+                    <!-- 添加收藏按钮 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="8dp" >
+
+                        <Button
+                            android:id="@+id/savebt"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/savebt_layout"
+                            android:gravity="center"
+                            android:text="点击收藏"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/introduction_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/infoone_button_layout"
+                        android:text="查看商家详情"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="1dp"
+                            android:background="@color/blue"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 产品介绍 -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/infoone_layout.xml -->

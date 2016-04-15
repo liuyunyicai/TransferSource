@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通讯录邀请好友 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightpink"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:text="亲，想要邀请他/她免费体验本溯源助手产品麽？"
+            android:textColor="@color/lightgreen"
+            android:textSize="17sp" />
+        <!-- 默认不再显示按钮 -->
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/setnotdisplay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/invitetheok_no" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:text="不再显示"
+                android:textColor="@color/theblue"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <!-- 确定按钮 -->
+
+            <Button
+                android:id="@+id/inviteok_bt"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/inviteok_bt_layout"
+                android:gravity="center"
+                android:text="是的"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/inviteno_bt"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/inviteno_bt_layout"
+                android:gravity="center"
+                android:text="点错了"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

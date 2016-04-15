@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 评论界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <!-- 评论界面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <!-- 用户头像 -->
+
+        <downloadimage.RoundImageView
+            android:id="@+id/photo_list"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/female_icon"
+            android:scaleType="centerCrop"
+            imagecontrol:border_inside_color="#fff7f2e9"
+            imagecontrol:border_thickness="2dp"/>
+        <!-- 用户名 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <!-- 用户名控件 -->
+
+                <TextView
+                    android:id="@+id/name_list"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="流云易采"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+                <!-- 等级控件 -->
+
+                <ImageView
+                    android:id="@+id/vipicon"
+                    android:layout_width="19dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/vip_icon" />
+
+                <ImageView
+                    android:id="@+id/level1icon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/level_icon" />
+
+                <ImageView
+                    android:id="@+id/level2icon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/level_icon" />
+
+                <ImageView
+                    android:id="@+id/level3icon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/level_icon" />
+                <!-- 时间控件 -->
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="2014-03-19 8:32"
+                    android:textColor="@color/grey21"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical" >
+
+                <!-- 评价详情 -->
+
+                <TextView
+                    android:id="@+id/command_text"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:text="发到空间发尽快发华盛顿覅减肥了热裤减肥了扩容公交卡了若干家"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/dianzan_bt"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/dianzan_bt"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+                <!-- 点赞人数 -->
+
+                <TextView
+                    android:id="@+id/zannum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:text="赞(1)"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 点赞界面 -->
+
+</LinearLayout>

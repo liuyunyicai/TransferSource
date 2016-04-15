@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 评分详情显示界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FFFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="right" >
+
+        <!-- 退出按钮 -->
+
+        <ImageButton
+            android:id="@+id/exit_scorebt"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/exit_basicbt_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- 本商家评分信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品评分:"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+            <!-- 产品评分大小 -->
+
+            <TextView
+                android:id="@+id/productscore_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="4.8/120"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <!-- 评分显示图标 -->
+
+            <RatingBar
+                android:id="@+id/productscore_bar"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.8"
+                android:stepSize="0.1" />
+
+            <!-- 显示详细信息按钮 -->
+
+            <ImageButton
+                android:id="@+id/product_detail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/score_detailbt_pressed" />
+        </LinearLayout>
+
+        <!-- 详细信息 -->
+
+        <LinearLayout
+            android:id="@+id/productscore_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/text_gray" />
+
+            <!--  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="5.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="5.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/productprecent_bar5"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/productprecent_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="4.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/productprecent_bar4"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/productprecent_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="3.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/productprecent_bar3"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/productprecent_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="2.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="2.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/productprecent_bar2"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/productprecent_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="1.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/productprecent_bar1"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/productprecent_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 同类商品的信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同类评分:"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+            <!-- 产品评分大小 -->
+
+            <TextView
+                android:id="@+id/definitionscore_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="4.7/1120"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <!-- 评分显示图标 -->
+
+            <RatingBar
+                android:id="@+id/definitionscore_bar"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.4"
+                android:stepSize="0.1" />
+
+            <!-- 显示详细信息按钮 -->
+
+            <ImageButton
+                android:id="@+id/definition_detail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/score_detailbt_pressed" />
+        </LinearLayout>
+
+        <!-- 详细信息 -->
+
+        <LinearLayout
+            android:id="@+id/definitionscore_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/text_gray" />
+
+            <!--  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="5.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="5.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/definitionprecent_bar5"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/definitionprecent_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="4.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/definitionprecent_bar4"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/definitionprecent_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 3 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="3.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/definitionprecent_bar3"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/definitionprecent_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 2 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="2.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="2.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/definitionprecent_bar2"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/definitionprecent_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <!-- 评分显示图标 -->
+
+                <RatingBar
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="1.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1.0分"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <!-- 显示评分人数百分比 -->
+
+                <RatingBar
+                    android:id="@+id/definitionprecent_bar1"
+                    style="@style/precentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.4"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/definitionprecent_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="102"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 顾客评分操作 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我来评分:"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+            <!-- 产品评分大小 -->
+
+            <TextView
+                android:id="@+id/myscore_text"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="5.0/未评"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <!-- 评分显示图标 -->
+
+            <RatingBar
+                android:id="@+id/myscore_bar"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <!-- 显示详细信息按钮 -->
+
+            <ImageButton
+                android:id="@+id/my_detail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/sendscorebt_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/layout/score_layout.xml -->

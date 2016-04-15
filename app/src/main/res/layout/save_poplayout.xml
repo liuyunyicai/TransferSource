@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FFFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="选择分组"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/savegroupListView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <!-- 添加新分组控件 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/addgroup_name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/grouptap"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="17sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 一些操作按钮 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <!-- 新建分组 -->
+
+        <ImageButton
+            android:id="@+id/addgroup_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/addgroupbt_layout" />
+        <!-- 确认添加分组 -->
+
+        <ImageButton
+            android:id="@+id/ensureaddgroup_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/addproductgroup_layout"
+            android:visibility="gone" />
+        <!-- 删除指定分组 -->
+
+        <ImageButton
+            android:id="@+id/deletegroup_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/cancelproduct_layout" />
+        <!-- 确认完成操作 -->
+
+        <ImageButton
+            android:id="@+id/finishadd_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/finishaddbt_layout" />
+        <!-- 退出操作 -->
+
+        <ImageButton
+            android:id="@+id/exitpop_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/exitpop_layout" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <!--自定义进度加载条-->
+    <declare-styleable name="LoadingProgressBarAttr">
+        <attr name="bar_angle" format="integer"></attr>    <!--弧形的角度-->
+        <attr name="bar_height" format="dimension"></attr> <!--线的高度-->
+        <attr name="bar_color" format="color"></attr>      <!--线的颜色-->
+        <attr name="bar_during" format="integer"/>         <!--加载的时间-->
+        <attr name="circle_radius" format="dimension"/>    <!--圆球的半径-->
+        <attr name="circle_color" format="color"/>         <!--圆球的颜色-->
+    </declare-styleable>
+
+</resources>

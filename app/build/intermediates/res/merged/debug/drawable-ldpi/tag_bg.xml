@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tab的背景色，点击显示白色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/tabPressed"/>
+    <item android:drawable="@color/colorPrimary"/>
+</selector><!-- From: file:/F:/AS_data/TransferSource/app/src/main/res/drawable-ldpi/tag_bg.xml -->
